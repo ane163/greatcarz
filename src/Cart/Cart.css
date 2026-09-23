@@ -1,0 +1,160 @@
+.cart-container {
+  min-height: 100vh;
+  background: #080808;
+  padding: 40px;
+  color: white;
+}
+
+
+.cart-title {
+  text-align: center;
+  font-size: 42px;
+  color: #d4af37;
+  margin-bottom: 40px;
+}
+
+
+.empty-cart {
+  text-align: center;
+  color: white;
+}
+
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+
+.cart-card {
+  display: flex;
+  align-items: center;
+  background: #111;
+  border: 1px solid #d4af37;
+  border-radius: 15px;
+  padding: 20px;
+  gap: 25px;
+  box-shadow: 0 0 15px rgba(212,175,55,0.3);
+}
+
+
+.cart-card img {
+  width: 160px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.cart-info {
+  flex: 1;
+}
+
+
+.cart-info h3 {
+  color: white;
+  font-size: 25px;
+}
+
+
+.cart-info p {
+  color: #d4af37;
+  font-size: 18px;
+}
+
+
+.remove-btn {
+  background: transparent;
+  border: 2px solid #d4af37;
+  color: #d4af37;
+  padding: 12px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+.remove-btn:hover {
+  background: #d4af37;
+  color: black;
+}
+
+.cart-summary {
+  margin-top: 40px;
+  background: #111;
+  border: 1px solid #d4af37;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: right;
+  box-shadow: 0 0 20px rgba(212,175,55,0.3);
+}
+
+
+.cart-summary h2 {
+  color: white;
+  font-size: 30px;
+}
+
+
+.cart-summary span {
+  color: #d4af37;
+  margin-left: 10px;
+}
+
+
+.checkout-btn {
+  margin-top: 20px;
+  background: #d4af37;
+  color: black;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.checkout-btn:hover {
+  background: white;
+  transform: scale(1.05);
+}
+
+.quantity-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+
+.quantity-box span {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  min-width: 30px;
+  text-align: center;
+}
+
+
+.quantity-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #d4af37;
+  background: #111;
+  color: #d4af37;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.quantity-btn:hover {
+  background: #d4af37;
+  color: black;
+  transform: scale(1.1);
+}

@@ -1,0 +1,17 @@
+.nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: transparent;
+    transition: background 0.4s ease;
+    z-index: 1000;
+}
+
+.nav.scrolled{
+    background: #d4a017; /* Golden orange */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}

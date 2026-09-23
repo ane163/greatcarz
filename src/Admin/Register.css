@@ -1,0 +1,132 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Poppins",sans-serif;
+}
+
+.register-page{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#050816,#091540,#0b1f5c,#111827);
+background-size:400% 400%;
+animation:bgMove 12s ease infinite;
+padding:30px;
+}
+
+@keyframes bgMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.register-card{
+width:430px;
+max-width:100%;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,.15);
+border-radius:25px;
+padding:40px;
+box-shadow:0 20px 60px rgba(0,0,0,.45);
+animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.register-card h1{
+color:#fff;
+font-size:34px;
+text-align:center;
+margin-bottom:10px;
+}
+
+.subtitle{
+color:#d1d5db;
+text-align:center;
+margin-bottom:30px;
+}
+
+.register-card form{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+.register-card input{
+padding:15px;
+border:none;
+border-radius:12px;
+background:rgba(255,255,255,.12);
+color:#fff;
+font-size:16px;
+outline:none;
+transition:.3s;
+}
+
+.register-card input::placeholder{
+color:#d1d5db;
+}
+
+.register-card input:focus{
+background:rgba(255,255,255,.18);
+transform:scale(1.02);
+box-shadow:0 0 15px rgba(59,130,246,.4);
+}
+
+.register-card button{
+padding:15px;
+border:none;
+border-radius:12px;
+background:linear-gradient(90deg,#2563eb,#06b6d4);
+color:#fff;
+font-size:17px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+.register-card button:hover{
+transform:translateY(-3px);
+box-shadow:0 15px 30px rgba(37,99,235,.4);
+}
+
+.login-link{
+margin-top:25px;
+text-align:center;
+color:#d1d5db;
+}
+
+.login-link a{
+margin-left:8px;
+text-decoration:none;
+color:#38bdf8;
+font-weight:600;
+}
+
+.login-link a:hover{
+color:#60a5fa;
+}
+
+@media(max-width:500px){
+
+.register-card{
+padding:25px;
+}
+
+.register-card h1{
+font-size:28px;
+}
+
+}

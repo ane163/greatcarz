@@ -1,0 +1,88 @@
+.user{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#111;
+    padding-top:80px;
+}
+
+.user-card{
+    width:350px;
+    background:#1a1a1a;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+    color:white;
+}
+
+.profile{
+    width:80px;
+    height:80px;
+    margin:auto;
+    border-radius:50%;
+    background:gold;
+    color:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.user-card h2{
+    color:gold;
+    margin-bottom:10px;
+}
+
+.user-card p{
+    margin-bottom:20px;
+}
+
+.user-card input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:5px;
+    outline:none;
+}
+
+.login-btn,
+.register-btn{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+    margin-bottom:10px;
+}
+
+.login-btn{
+    background:gold;
+    color:black;
+}
+
+.register-btn{
+    background:white;
+    color:black;
+}
+
+.login-btn:hover,
+.register-btn:hover{
+    opacity:0.9;
+}
+
+.forgot{
+    color:gold;
+    cursor:pointer;
+}
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid gold;
+  margin-bottom: 20px;
+}

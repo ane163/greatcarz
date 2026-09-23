@@ -1,0 +1,123 @@
+.success-container {
+
+min-height:100vh;
+
+background:#050505;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+color:white;
+
+padding:20px;
+
+}
+
+
+
+.success-box {
+
+background:#111;
+
+border:1px solid #d4af37;
+
+border-radius:25px;
+
+padding:50px;
+
+text-align:center;
+
+max-width:500px;
+
+box-shadow:0 0 30px rgba(212,175,55,0.4);
+
+}
+
+
+
+.success-icon {
+
+width:80px;
+
+height:80px;
+
+border-radius:50%;
+
+background:#d4af37;
+
+color:black;
+
+font-size:50px;
+
+font-weight:bold;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+margin:auto;
+
+}
+
+
+
+.success-box h1 {
+
+color:#d4af37;
+
+font-size:35px;
+
+margin:25px 0;
+
+}
+
+
+
+.success-box p {
+
+font-size:18px;
+
+line-height:1.6;
+
+}
+
+
+
+.home-btn {
+
+margin-top:30px;
+
+padding:15px 40px;
+
+border:none;
+
+border-radius:30px;
+
+background:#d4af37;
+
+color:black;
+
+font-size:18px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+
+
+.home-btn:hover {
+
+background:white;
+
+transform:scale(1.05);
+
+}

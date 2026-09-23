@@ -1,0 +1,34 @@
+.categories{
+    display:flex;
+    justify-content:center;
+    gap:100px;
+    margin-top:50px;
+}
+
+.category{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    cursor:pointer;
+    transition:0.3s;
+    
+}
+
+.category:hover{
+    color:royalblue;
+    transform:scale(1.1);
+   
+}
+
+.icon{
+    font-size:40px;
+    color: black;
+    padding: 0px;
+
+}
+
+.category p{
+    margin-top:10px;
+    font-weight:bold;
+     margin-top: 0px;
+}

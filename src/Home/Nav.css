@@ -1,0 +1,317 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:80px;
+    background:rgba(10,10,10,0.92);
+    backdrop-filter:blur(15px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 50px;
+    z-index:1000;
+    border-bottom:1px solid rgba(212,160,23,.3);
+    transition:.4s;
+}
+
+.navbar.scrolled{
+    background:#050505;
+    box-shadow:0 5px 20px rgba(212,160,23,.25);
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.nav-logo h2{
+    color:#d4a017;
+    font-size:30px;
+    font-weight:800;
+    letter-spacing:2px;
+    cursor:pointer;
+    text-shadow:0 0 10px rgba(212,160,23,.5);
+}
+
+/* =========================
+   SEARCH BAR
+========================= */
+
+.search-box{
+    width:320px;
+    height:45px;
+    display:flex;
+    align-items:center;
+    background:#171717;
+    border:1px solid #d4a017;
+    border-radius:40px;
+    padding:0 15px;
+}
+
+.search-box input{
+    flex:1;
+    border:none;
+    outline:none;
+    background:transparent;
+    color:white;
+    font-size:15px;
+}
+
+.search-box input::placeholder{
+    color:#9b9b9b;
+}
+
+.search-icon{
+    color:#d4a017;
+    font-size:22px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.search-icon:hover{
+    transform:scale(1.15);
+}
+
+/* =========================
+   NAVIGATION LINKS
+========================= */
+
+.link ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
+    align-items:center;
+}
+
+.link ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+    font-weight:600;
+    position:relative;
+    transition:.3s;
+}
+
+.link ul li a:hover{
+    color:#d4a017;
+}
+
+.link ul li a::after{
+    content:"";
+    position:absolute;
+    width:0;
+    height:2px;
+    left:0;
+    bottom:-8px;
+    background:#d4a017;
+    transition:.3s;
+}
+
+.link ul li a:hover::after{
+    width:100%;
+}
+
+/* =========================
+   ICONS
+========================= */
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-icon a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.icon {
+    color: white !important;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+.icon:hover {
+    color: #d4af37 !important;
+    transform: scale(1.15);
+}
+
+
+/* CART NUMBER */
+
+.cart-icon span {
+    position: absolute;
+    top: -10px;
+    right: -12px;
+    width: 20px;
+    height: 20px;
+    background: #d4af37;
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+/* =========================
+   CART
+========================= */
+
+.cart-icon{
+    position:relative;
+}
+
+.cart-icon a{
+    color:white;
+    text-decoration:none;
+}
+
+.cart-icon span{
+    position:absolute;
+    top:-10px;
+    right:-12px;
+    width:20px;
+    height:20px;
+    background:#d4a017;
+    color:black;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:12px;
+    font-weight:bold;
+}
+
+
+
+
+
+.nav-logo h2,
+.link ul li a,
+.icon,
+.search-icon{
+    transition:all .3s ease;
+}
+
+.nav-logo h2:hover{
+    transform:scale(1.03);
+    text-shadow:0 0 18px rgba(212,160,23,.8);
+}
+
+.search-box:hover{
+    border-color:#f4c542;
+    box-shadow:0 0 12px rgba(212,160,23,.35);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width:992px){
+
+.navbar{
+    padding:0 25px;
+}
+
+.search-box{
+    width:220px;
+}
+
+.search-box input{
+    font-size:14px;
+}
+
+.link ul{
+    gap:20px;
+}
+
+.link ul li a{
+    font-size:15px;
+}
+
+.icon{
+    font-size:26px;
+}
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px){
+
+.navbar{
+    height:70px;
+    padding:0 15px;
+}
+
+.nav-logo h2{
+    font-size:22px;
+}
+
+.link{
+    display:none;
+}
+
+.search-box{
+    width:170px;
+    height:40px;
+}
+
+.search-box input{
+    font-size:13px;
+}
+
+.nav-icon{
+    gap:15px;
+}
+
+.icon{
+    font-size:24px;
+}
+
+.cart-icon span{
+    width:18px;
+    height:18px;
+    font-size:10px;
+}
+
+}
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width:480px){
+
+.search-box{
+    width:140px;
+}
+
+.search-box input{
+    font-size:12px;
+}
+
+.nav-logo h2{
+    font-size:18px;
+}
+
+.icon{
+    font-size:22px;
+}
+
+}
